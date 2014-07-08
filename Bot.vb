@@ -34,7 +34,10 @@
 
     Private Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
         My.Computer.FileSystem.WriteAllText(My.Application.Info.DirectoryPath & "/" & Username.Text & ".Account", Link.Text, True)
-        MsgBox("Restart Required")
+        Dim Restart As Integer = MessageBox.Show("Bot Must Reload", "Refresh", MessageBoxButtons.OKCancel)
+        If Restart = DialogResult.OK Then
+            Application.Restart()
+        End If
     End Sub
 
 
