@@ -38,9 +38,9 @@ Partial Class Bot
         '
         Me.TabControl.Controls.Add(Me.Home)
         Me.TabControl.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl.Location = New System.Drawing.Point(0, 0)
-        Me.TabControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabControl.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl.Name = "TabControl"
         Me.TabControl.SelectedIndex = 0
         Me.TabControl.Size = New System.Drawing.Size(705, 387)
@@ -54,11 +54,11 @@ Partial Class Bot
         Me.Home.Controls.Add(Me.Label2)
         Me.Home.Controls.Add(Me.Username)
         Me.Home.Controls.Add(Me.Label1)
-        Me.Home.Location = New System.Drawing.Point(4, 34)
-        Me.Home.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Home.Location = New System.Drawing.Point(4, 33)
+        Me.Home.Margin = New System.Windows.Forms.Padding(2)
         Me.Home.Name = "Home"
-        Me.Home.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Home.Size = New System.Drawing.Size(697, 349)
+        Me.Home.Padding = New System.Windows.Forms.Padding(2)
+        Me.Home.Size = New System.Drawing.Size(697, 350)
         Me.Home.TabIndex = 0
         Me.Home.Text = "Home"
         Me.Home.UseVisualStyleBackColor = True
@@ -66,7 +66,7 @@ Partial Class Bot
         'Add
         '
         Me.Add.Location = New System.Drawing.Point(20, 139)
-        Me.Add.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Add.Margin = New System.Windows.Forms.Padding(2)
         Me.Add.Name = "Add"
         Me.Add.Size = New System.Drawing.Size(356, 39)
         Me.Add.TabIndex = 5
@@ -88,7 +88,7 @@ Partial Class Bot
         '
         Me.Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Link.Location = New System.Drawing.Point(203, 94)
-        Me.Link.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Link.Margin = New System.Windows.Forms.Padding(2)
         Me.Link.Name = "Link"
         Me.Link.Size = New System.Drawing.Size(174, 38)
         Me.Link.TabIndex = 3
@@ -108,7 +108,7 @@ Partial Class Bot
         '
         Me.Username.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Username.Location = New System.Drawing.Point(20, 94)
-        Me.Username.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Username.Margin = New System.Windows.Forms.Padding(2)
         Me.Username.Name = "Username"
         Me.Username.Size = New System.Drawing.Size(174, 38)
         Me.Username.TabIndex = 1
@@ -130,7 +130,7 @@ Partial Class Bot
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(705, 387)
         Me.Controls.Add(Me.TabControl)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Bot"
         Me.ShowIcon = False
         Me.Text = "Land of Bitcoin Faucet Bot"
