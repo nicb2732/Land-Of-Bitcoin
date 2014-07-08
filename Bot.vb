@@ -38,4 +38,9 @@
     End Sub
 
 
+    Private Sub Bot_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged
+        Username.Width = TabControl.Width - 60
+        Link.Width = TabControl.Width - 60
+        Add.Width = TabControl.Width - 60
+    End Sub
 End Class

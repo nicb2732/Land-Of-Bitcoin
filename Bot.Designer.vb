@@ -65,10 +65,10 @@ Partial Class Bot
         '
         'Add
         '
-        Me.Add.Location = New System.Drawing.Point(20, 139)
+        Me.Add.Location = New System.Drawing.Point(20, 205)
         Me.Add.Margin = New System.Windows.Forms.Padding(2)
         Me.Add.Name = "Add"
-        Me.Add.Size = New System.Drawing.Size(356, 39)
+        Me.Add.Size = New System.Drawing.Size(416, 39)
         Me.Add.TabIndex = 5
         Me.Add.Text = "Add Account"
         Me.Add.UseVisualStyleBackColor = True
@@ -76,53 +76,53 @@ Partial Class Bot
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(200, 60)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(18, 134)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 29)
+        Me.Label3.Size = New System.Drawing.Size(44, 24)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Link"
         '
         'Link
         '
-        Me.Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Link.Location = New System.Drawing.Point(203, 94)
+        Me.Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Link.Location = New System.Drawing.Point(20, 160)
         Me.Link.Margin = New System.Windows.Forms.Padding(2)
         Me.Link.Name = "Link"
-        Me.Link.Size = New System.Drawing.Size(174, 38)
+        Me.Link.Size = New System.Drawing.Size(416, 31)
         Me.Link.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(17, 60)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(18, 68)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(124, 29)
+        Me.Label2.Size = New System.Drawing.Size(97, 24)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Username"
         '
         'Username
         '
-        Me.Username.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Username.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Username.Location = New System.Drawing.Point(20, 94)
         Me.Username.Margin = New System.Windows.Forms.Padding(2)
         Me.Username.Name = "Username"
-        Me.Username.Size = New System.Drawing.Size(174, 38)
+        Me.Username.Size = New System.Drawing.Size(416, 31)
         Me.Username.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(15, 14)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(401, 42)
+        Me.Label1.Size = New System.Drawing.Size(481, 37)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Bot By Chaos Terminal" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label1.Text = "Bot designed by Chaos Terminal" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Bot
         '
