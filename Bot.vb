@@ -11,7 +11,7 @@ Public Class Bot
         FileSystem.WriteAllText(My.Application.Info.DirectoryPath & "/" & Username.Text & ".account", Link.Text, True)
         Dim Restart As Integer = MessageBox.Show("Bot Must Reload", "Refresh", MessageBoxButtons.OKCancel)
         If Restart = DialogResult.OK Then
-            Call Load_Bot_Sub()
+            Application.Restart()
         End If
     End Sub
 
