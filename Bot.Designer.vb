@@ -38,7 +38,7 @@ Partial Class Bot
         '
         Me.TabControl.Controls.Add(Me.Home)
         Me.TabControl.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl.Location = New System.Drawing.Point(0, 0)
         Me.TabControl.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl.Name = "TabControl"
@@ -54,6 +54,7 @@ Partial Class Bot
         Me.Home.Controls.Add(Me.Label2)
         Me.Home.Controls.Add(Me.Username)
         Me.Home.Controls.Add(Me.Label1)
+        Me.Home.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Home.Location = New System.Drawing.Point(4, 33)
         Me.Home.Margin = New System.Windows.Forms.Padding(2)
         Me.Home.Name = "Home"
