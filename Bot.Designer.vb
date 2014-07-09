@@ -70,10 +70,10 @@ Partial Class Bot
         '
         'Add
         '
-        Me.Add.Location = New System.Drawing.Point(20, 205)
+        Me.Add.Location = New System.Drawing.Point(7, 205)
         Me.Add.Margin = New System.Windows.Forms.Padding(2)
         Me.Add.Name = "Add"
-        Me.Add.Size = New System.Drawing.Size(416, 39)
+        Me.Add.Size = New System.Drawing.Size(683, 45)
         Me.Add.TabIndex = 5
         Me.Add.Text = "Add Account"
         Me.Add.UseVisualStyleBackColor = True
@@ -93,10 +93,10 @@ Partial Class Bot
         'Link
         '
         Me.Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Link.Location = New System.Drawing.Point(20, 160)
+        Me.Link.Location = New System.Drawing.Point(7, 160)
         Me.Link.Margin = New System.Windows.Forms.Padding(2)
         Me.Link.Name = "Link"
-        Me.Link.Size = New System.Drawing.Size(416, 31)
+        Me.Link.Size = New System.Drawing.Size(683, 31)
         Me.Link.TabIndex = 3
         '
         'Username_Label
@@ -113,10 +113,10 @@ Partial Class Bot
         'Username
         '
         Me.Username.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Username.Location = New System.Drawing.Point(20, 94)
+        Me.Username.Location = New System.Drawing.Point(7, 94)
         Me.Username.Margin = New System.Windows.Forms.Padding(2)
         Me.Username.Name = "Username"
-        Me.Username.Size = New System.Drawing.Size(416, 31)
+        Me.Username.Size = New System.Drawing.Size(683, 31)
         Me.Username.TabIndex = 1
         '
         'Bot_designed_by_Chaos_Terminal

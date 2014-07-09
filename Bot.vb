@@ -49,9 +49,9 @@ Public Class Bot
 
 
     Private Sub Bot_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged
-        Username.Width = TabControl.Width - 60
-        Link.Width = TabControl.Width - 60
-        Add.Width = TabControl.Width - 60
+        Username.Width = TabControl.Width - 28
+        Link.Width = TabControl.Width - 28
+        Add.Width = TabControl.Width - 28
     End Sub
 
     Private Sub Proxy_Link_Label_Click(sender As Object, e As EventArgs) Handles Proxy_Link_Label.Click
