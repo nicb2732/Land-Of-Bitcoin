@@ -36,6 +36,7 @@ Partial Class Bot
         Me.Username_Label = New System.Windows.Forms.Label()
         Me.Username = New System.Windows.Forms.TextBox()
         Me.Bot_designed_by_Chaos_Terminal = New System.Windows.Forms.Label()
+        Me.Path = New System.Windows.Forms.TextBox()
         Me.TabControl.SuspendLayout()
         Me.Accounts.SuspendLayout()
         Me.Home.SuspendLayout()
@@ -56,6 +57,7 @@ Partial Class Bot
         '
         'Accounts
         '
+        Me.Accounts.Controls.Add(Me.Path)
         Me.Accounts.Controls.Add(Me.FileBrowser)
         Me.Accounts.Location = New System.Drawing.Point(4, 27)
         Me.Accounts.Name = "Accounts"
@@ -186,6 +188,17 @@ Partial Class Bot
         Me.Bot_designed_by_Chaos_Terminal.TabIndex = 0
         Me.Bot_designed_by_Chaos_Terminal.Text = "Bot designed by Chaos Terminal" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'Path
+        '
+        Me.Path.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Path.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Path.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Path.Location = New System.Drawing.Point(0, 0)
+        Me.Path.Name = "Path"
+        Me.Path.ReadOnly = True
+        Me.Path.Size = New System.Drawing.Size(697, 22)
+        Me.Path.TabIndex = 1
+        '
         'Bot
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -199,6 +212,7 @@ Partial Class Bot
         Me.Text = "Land of Bitcoin Faucet Bot"
         Me.TabControl.ResumeLayout(False)
         Me.Accounts.ResumeLayout(False)
+        Me.Accounts.PerformLayout()
         Me.Home.ResumeLayout(False)
         Me.Home.PerformLayout()
         Me.ResumeLayout(False)
@@ -217,5 +231,6 @@ Partial Class Bot
     Friend WithEvents Folder As System.Windows.Forms.TextBox
     Friend WithEvents Folder_Label As System.Windows.Forms.Label
     Friend WithEvents Change_Folder As System.Windows.Forms.Button
+    Friend WithEvents Path As System.Windows.Forms.TextBox
 
 End Class

@@ -45,6 +45,7 @@ Public Class Bot
             TabControl.TabPages.Add(tabpage)
         Next
         FileBrowser.Navigate("file:\\\" & My.Settings.Folder)
+        Path.Text = My.Settings.Folder
         Folder.Text = My.Settings.Folder
     End Sub
 
