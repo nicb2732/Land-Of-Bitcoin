@@ -32,6 +32,7 @@ Public Class Bot
 
             TabControl.TabPages.Add(tabpage)
         Next
+        FileBrowser.Navigate("file:///" & My.Application.Info.DirectoryPath)
     End Sub
 
     Private Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
@@ -47,5 +48,9 @@ Public Class Bot
         Username.Width = TabControl.Width - 60
         Link.Width = TabControl.Width - 60
         Add.Width = TabControl.Width - 60
+    End Sub
+
+    Private Sub Proxy_Link_Label_Click(sender As Object, e As EventArgs) Handles Proxy_Link_Label.Click
+        Process.Start("https://www.zend2.com/")
     End Sub
 End Class

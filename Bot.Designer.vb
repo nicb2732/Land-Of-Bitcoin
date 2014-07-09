@@ -25,17 +25,21 @@ Partial Class Bot
         Me.TabControl = New System.Windows.Forms.TabControl()
         Me.Home = New System.Windows.Forms.TabPage()
         Me.Add = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Proxy_Link_Label = New System.Windows.Forms.Label()
         Me.Link = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Username_Label = New System.Windows.Forms.Label()
         Me.Username = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Bot_designed_by_Chaos_Terminal = New System.Windows.Forms.Label()
+        Me.Accounts = New System.Windows.Forms.TabPage()
+        Me.FileBrowser = New System.Windows.Forms.WebBrowser()
         Me.TabControl.SuspendLayout()
         Me.Home.SuspendLayout()
+        Me.Accounts.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl
         '
+        Me.TabControl.Controls.Add(Me.Accounts)
         Me.TabControl.Controls.Add(Me.Home)
         Me.TabControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -49,11 +53,11 @@ Partial Class Bot
         'Home
         '
         Me.Home.Controls.Add(Me.Add)
-        Me.Home.Controls.Add(Me.Label3)
+        Me.Home.Controls.Add(Me.Proxy_Link_Label)
         Me.Home.Controls.Add(Me.Link)
-        Me.Home.Controls.Add(Me.Label2)
+        Me.Home.Controls.Add(Me.Username_Label)
         Me.Home.Controls.Add(Me.Username)
-        Me.Home.Controls.Add(Me.Label1)
+        Me.Home.Controls.Add(Me.Bot_designed_by_Chaos_Terminal)
         Me.Home.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Home.Location = New System.Drawing.Point(4, 33)
         Me.Home.Margin = New System.Windows.Forms.Padding(2)
@@ -74,16 +78,17 @@ Partial Class Bot
         Me.Add.Text = "Add Account"
         Me.Add.UseVisualStyleBackColor = True
         '
-        'Label3
+        'Proxy_Link_Label
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(18, 134)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 24)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Link"
+        Me.Proxy_Link_Label.AutoSize = True
+        Me.Proxy_Link_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Proxy_Link_Label.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.Proxy_Link_Label.Location = New System.Drawing.Point(18, 134)
+        Me.Proxy_Link_Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Proxy_Link_Label.Name = "Proxy_Link_Label"
+        Me.Proxy_Link_Label.Size = New System.Drawing.Size(97, 24)
+        Me.Proxy_Link_Label.TabIndex = 4
+        Me.Proxy_Link_Label.Text = "Proxy Link"
         '
         'Link
         '
@@ -94,16 +99,16 @@ Partial Class Bot
         Me.Link.Size = New System.Drawing.Size(416, 31)
         Me.Link.TabIndex = 3
         '
-        'Label2
+        'Username_Label
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(18, 68)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 24)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Username"
+        Me.Username_Label.AutoSize = True
+        Me.Username_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Username_Label.Location = New System.Drawing.Point(18, 68)
+        Me.Username_Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Username_Label.Name = "Username_Label"
+        Me.Username_Label.Size = New System.Drawing.Size(97, 24)
+        Me.Username_Label.TabIndex = 2
+        Me.Username_Label.Text = "Username"
         '
         'Username
         '
@@ -114,16 +119,35 @@ Partial Class Bot
         Me.Username.Size = New System.Drawing.Size(416, 31)
         Me.Username.TabIndex = 1
         '
-        'Label1
+        'Bot_designed_by_Chaos_Terminal
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(15, 14)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(481, 37)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Bot designed by Chaos Terminal" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Bot_designed_by_Chaos_Terminal.AutoSize = True
+        Me.Bot_designed_by_Chaos_Terminal.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Bot_designed_by_Chaos_Terminal.Location = New System.Drawing.Point(15, 14)
+        Me.Bot_designed_by_Chaos_Terminal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Bot_designed_by_Chaos_Terminal.Name = "Bot_designed_by_Chaos_Terminal"
+        Me.Bot_designed_by_Chaos_Terminal.Size = New System.Drawing.Size(481, 37)
+        Me.Bot_designed_by_Chaos_Terminal.TabIndex = 0
+        Me.Bot_designed_by_Chaos_Terminal.Text = "Bot designed by Chaos Terminal" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Accounts
+        '
+        Me.Accounts.Controls.Add(Me.FileBrowser)
+        Me.Accounts.Location = New System.Drawing.Point(4, 33)
+        Me.Accounts.Name = "Accounts"
+        Me.Accounts.Size = New System.Drawing.Size(697, 350)
+        Me.Accounts.TabIndex = 1
+        Me.Accounts.Text = "Accounts"
+        Me.Accounts.UseVisualStyleBackColor = True
+        '
+        'FileBrowser
+        '
+        Me.FileBrowser.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FileBrowser.Location = New System.Drawing.Point(0, 0)
+        Me.FileBrowser.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.FileBrowser.Name = "FileBrowser"
+        Me.FileBrowser.Size = New System.Drawing.Size(697, 350)
+        Me.FileBrowser.TabIndex = 0
         '
         'Bot
         '
@@ -138,16 +162,19 @@ Partial Class Bot
         Me.TabControl.ResumeLayout(False)
         Me.Home.ResumeLayout(False)
         Me.Home.PerformLayout()
+        Me.Accounts.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents TabControl As System.Windows.Forms.TabControl
     Friend WithEvents Home As System.Windows.Forms.TabPage
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Proxy_Link_Label As System.Windows.Forms.Label
     Friend WithEvents Link As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Username_Label As System.Windows.Forms.Label
     Friend WithEvents Username As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Bot_designed_by_Chaos_Terminal As System.Windows.Forms.Label
     Friend WithEvents Add As System.Windows.Forms.Button
+    Friend WithEvents Accounts As System.Windows.Forms.TabPage
+    Friend WithEvents FileBrowser As System.Windows.Forms.WebBrowser
 
 End Class
