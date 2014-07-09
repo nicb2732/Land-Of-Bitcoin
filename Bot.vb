@@ -4,15 +4,19 @@ Public Class Bot
     Dim last_tab As System.Windows.Forms.TabPage
     Private Sub Bot_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TabControl.SelectedTab = Home
+        If My.Computer.FileSystem.DirectoryExists(My.Application.Info.DirectoryPath & "/accounts") Then
+        Else
+            My.Computer.FileSystem.CreateDirectory(My.Application.Info.DirectoryPath & "/accounts")
+        End If
         Dim strFileSize As String = ""
-        Dim di As New IO.DirectoryInfo(My.Application.Info.DirectoryPath)
+        Dim di As New IO.DirectoryInfo(My.Application.Info.DirectoryPath & "/accounts")
         Dim aryFi As IO.FileInfo() = di.GetFiles("*.account")
         Dim fi As IO.FileInfo
         For Each fi In aryFi
             Dim Noconfig As String = Replace(fi.Name, ".account", "")
             Dim URL As String
 
-            Dim reader As New System.IO.StreamReader(My.Application.Info.DirectoryPath & "/" & Noconfig & ".account")
+            Dim reader As New System.IO.StreamReader(My.Application.Info.DirectoryPath & "/accounts/" & Noconfig & ".account")
 
             URL = reader.ReadLine()
 
@@ -36,7 +40,7 @@ Public Class Bot
     End Sub
 
     Private Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
-        FileSystem.WriteAllText(My.Application.Info.DirectoryPath & "/" & Username.Text & ".account", Link.Text, True)
+        FileSystem.WriteAllText(My.Application.Info.DirectoryPath & "/accounts/" & Username.Text & ".account", Link.Text, True)
         Dim Restart As Integer = MessageBox.Show("Bot Must Reload", "Refresh", MessageBoxButtons.OKCancel)
         If Restart = DialogResult.OK Then
             Application.Restart()
