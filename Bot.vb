@@ -3,7 +3,11 @@
 Public Class Bot
     Dim last_tab As System.Windows.Forms.TabPage
     Private Sub Bot_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Settings.Folder = "" Then My.Settings.Folder = My.Application.Info.DirectoryPath & "/accounts"
+        If My.Settings.Folder = Nothing Or My.Settings.Folder = My.Application.Info.DirectoryPath & "/accounts" Then
+            My.Settings.Folder = My.Application.Info.DirectoryPath & "/accounts"
+        Else
+            My.Computer.FileSystem.DeleteDirectory(My.Application.Info.DirectoryPath & "/accounts", FileIO.UIOption.AllDialogs, FileIO.RecycleOption.SendToRecycleBin)
+        End If
         TabControl.SelectedTab = Home
         If My.Computer.FileSystem.DirectoryExists(My.Settings.Folder) Then
         Else
@@ -63,6 +67,10 @@ Public Class Bot
     End Sub
 
     Private Sub Change_Folder_Click(sender As Object, e As EventArgs) Handles Change_Folder.Click
+        If My.Computer.FileSystem.DirectoryExists(Folder.Text) Then
+        Else
+            My.Computer.FileSystem.CreateDirectory(Folder.Text)
+        End If
         My.Computer.FileSystem.CopyDirectory(My.Settings.Folder, Folder.Text)
         My.Settings.Folder = Folder.Text
         Dim Restart As Integer = MessageBox.Show("Bot Must Reload", "Refresh", MessageBoxButtons.OKCancel)
