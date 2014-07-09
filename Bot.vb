@@ -70,11 +70,19 @@ Public Class Bot
     End Sub
 
     Private Sub Change_Folder_Click(sender As Object, e As EventArgs) Handles Change_Folder.Click
-        If My.Computer.FileSystem.DirectoryExists(Folder.Text) Then
-        Else
-            My.Computer.FileSystem.CreateDirectory(Folder.Text)
-        End If
-        My.Computer.FileSystem.CopyDirectory(My.Settings.Folder, Folder.Text)
+        Try
+            If Folder.Text = My.Application.Info.DirectoryPath Then
+                MsgBox("You Can't Use That Directory")
+                Return
+            End If
+            If My.Computer.FileSystem.DirectoryExists(Folder.Text) Then
+            Else
+                My.Computer.FileSystem.CreateDirectory(Folder.Text)
+            End If
+            My.Computer.FileSystem.CopyDirectory(My.Settings.Folder, Folder.Text)
+        Catch ex As Exception
+            MsgBox("Client Could Not Tranfer Account Files")
+        End Try
         My.Settings.Folder = Folder.Text
         Dim Restart As Integer = MessageBox.Show("Bot Must Reload", "Refresh", MessageBoxButtons.OKCancel)
         If Restart = DialogResult.OK Then
