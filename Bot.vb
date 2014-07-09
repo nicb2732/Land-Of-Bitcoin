@@ -6,7 +6,10 @@ Public Class Bot
         If My.Settings.Folder = Nothing Or My.Settings.Folder = My.Application.Info.DirectoryPath & "\accounts" Then
             My.Settings.Folder = My.Application.Info.DirectoryPath & "\accounts"
         Else
-            My.Computer.FileSystem.DeleteDirectory(My.Application.Info.DirectoryPath & "\accounts", FileIO.UIOption.AllDialogs, FileIO.RecycleOption.SendToRecycleBin)
+            Try
+                My.Computer.FileSystem.DeleteDirectory(My.Application.Info.DirectoryPath & "\accounts", FileIO.UIOption.AllDialogs, FileIO.RecycleOption.SendToRecycleBin)
+            Catch ex As Exception
+            End Try
         End If
         TabControl.SelectedTab = Home
         If My.Computer.FileSystem.DirectoryExists(My.Settings.Folder) Then
