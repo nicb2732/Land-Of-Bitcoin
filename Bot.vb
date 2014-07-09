@@ -36,7 +36,7 @@ Public Class Bot
 
             TabControl.TabPages.Add(tabpage)
         Next
-        FileBrowser.Navigate("file:///" & My.Application.Info.DirectoryPath)
+        FileBrowser.Navigate("file:///" & My.Application.Info.DirectoryPath & "/accounts")
     End Sub
 
     Private Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
