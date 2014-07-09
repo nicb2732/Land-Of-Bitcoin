@@ -32,7 +32,7 @@ Public Class Bot
 
             Dim tabpage As New TabPage
 
-            tabpage.Text = Noconfig
+            tabpage.Text = " " + Noconfig + " "
 
             Dim WebBrowser As New WebBrowser
 

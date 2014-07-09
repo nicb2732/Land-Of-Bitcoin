@@ -46,7 +46,7 @@ Partial Class Bot
         Me.TabControl.Controls.Add(Me.Accounts)
         Me.TabControl.Controls.Add(Me.Home)
         Me.TabControl.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl.Location = New System.Drawing.Point(0, 0)
         Me.TabControl.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl.Name = "TabControl"
@@ -57,11 +57,11 @@ Partial Class Bot
         'Accounts
         '
         Me.Accounts.Controls.Add(Me.FileBrowser)
-        Me.Accounts.Location = New System.Drawing.Point(4, 33)
+        Me.Accounts.Location = New System.Drawing.Point(4, 27)
         Me.Accounts.Name = "Accounts"
-        Me.Accounts.Size = New System.Drawing.Size(697, 473)
+        Me.Accounts.Size = New System.Drawing.Size(697, 479)
         Me.Accounts.TabIndex = 1
-        Me.Accounts.Text = "Accounts"
+        Me.Accounts.Text = " Accounts "
         Me.Accounts.UseVisualStyleBackColor = True
         '
         'FileBrowser
@@ -70,7 +70,7 @@ Partial Class Bot
         Me.FileBrowser.Location = New System.Drawing.Point(0, 0)
         Me.FileBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.FileBrowser.Name = "FileBrowser"
-        Me.FileBrowser.Size = New System.Drawing.Size(697, 473)
+        Me.FileBrowser.Size = New System.Drawing.Size(697, 479)
         Me.FileBrowser.TabIndex = 0
         '
         'Home
@@ -85,13 +85,13 @@ Partial Class Bot
         Me.Home.Controls.Add(Me.Username)
         Me.Home.Controls.Add(Me.Bot_designed_by_Chaos_Terminal)
         Me.Home.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Home.Location = New System.Drawing.Point(4, 33)
+        Me.Home.Location = New System.Drawing.Point(4, 27)
         Me.Home.Margin = New System.Windows.Forms.Padding(2)
         Me.Home.Name = "Home"
         Me.Home.Padding = New System.Windows.Forms.Padding(2)
-        Me.Home.Size = New System.Drawing.Size(697, 473)
+        Me.Home.Size = New System.Drawing.Size(697, 479)
         Me.Home.TabIndex = 0
-        Me.Home.Text = "Home"
+        Me.Home.Text = " Home "
         Me.Home.UseVisualStyleBackColor = True
         '
         'Change_Folder
