@@ -3,10 +3,10 @@
 Public Class Bot
     Dim last_tab As System.Windows.Forms.TabPage
     Private Sub Bot_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Settings.Folder = Nothing Or My.Settings.Folder = My.Application.Info.DirectoryPath & "/accounts" Then
-            My.Settings.Folder = My.Application.Info.DirectoryPath & "/accounts"
+        If My.Settings.Folder = Nothing Or My.Settings.Folder = My.Application.Info.DirectoryPath & "\accounts" Then
+            My.Settings.Folder = My.Application.Info.DirectoryPath & "\accounts"
         Else
-            My.Computer.FileSystem.DeleteDirectory(My.Application.Info.DirectoryPath & "/accounts", FileIO.UIOption.AllDialogs, FileIO.RecycleOption.SendToRecycleBin)
+            My.Computer.FileSystem.DeleteDirectory(My.Application.Info.DirectoryPath & "\accounts", FileIO.UIOption.AllDialogs, FileIO.RecycleOption.SendToRecycleBin)
         End If
         TabControl.SelectedTab = Home
         If My.Computer.FileSystem.DirectoryExists(My.Settings.Folder) Then
@@ -21,7 +21,7 @@ Public Class Bot
             Dim Noconfig As String = Replace(fi.Name, ".account", "")
             Dim URL As String
 
-            Dim reader As New System.IO.StreamReader(My.Settings.Folder & "/" & Noconfig & ".account")
+            Dim reader As New System.IO.StreamReader(My.Settings.Folder & "\" & Noconfig & ".account")
 
             URL = reader.ReadLine()
 
@@ -41,12 +41,12 @@ Public Class Bot
 
             TabControl.TabPages.Add(tabpage)
         Next
-        FileBrowser.Navigate("file:///" & My.Settings.Folder)
+        FileBrowser.Navigate("file:\\\" & My.Settings.Folder)
         Folder.Text = My.Settings.Folder
     End Sub
 
     Private Sub Add_Click(sender As Object, e As EventArgs) Handles Add.Click
-        FileSystem.WriteAllText(My.Settings.Folder & "/" & Username.Text & ".account", Link.Text, True)
+        FileSystem.WriteAllText(My.Settings.Folder & "\" & Username.Text & ".account", Link.Text, True)
         Dim Restart As Integer = MessageBox.Show("Bot Must Reload", "Refresh", MessageBoxButtons.OKCancel)
         If Restart = DialogResult.OK Then
             Application.Restart()
@@ -63,7 +63,7 @@ Public Class Bot
     End Sub
 
     Private Sub Proxy_Link_Label_Click(sender As Object, e As EventArgs) Handles Proxy_Link_Label.Click
-        Process.Start("https://www.zend2.com/")
+        Process.Start("https:\\www.zend2.com\")
     End Sub
 
     Private Sub Change_Folder_Click(sender As Object, e As EventArgs) Handles Change_Folder.Click
