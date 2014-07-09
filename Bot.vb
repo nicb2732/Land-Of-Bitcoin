@@ -65,5 +65,9 @@ Public Class Bot
     Private Sub Change_Folder_Click(sender As Object, e As EventArgs) Handles Change_Folder.Click
         My.Computer.FileSystem.CopyDirectory(My.Settings.Folder, Folder.Text)
         My.Settings.Folder = Folder.Text
+        Dim Restart As Integer = MessageBox.Show("Bot Must Reload", "Refresh", MessageBoxButtons.OKCancel)
+        If Restart = DialogResult.OK Then
+            Application.Restart()
+        End If
     End Sub
 End Class
